@@ -1335,10 +1335,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         deleted = str(deleted)
         await k.edit_text(text=f"<b>Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ {deleted} PʀᴇDVDRɪᴘ Fɪʟᴇs.</b>")
 
-    elif query.data == "1tamilmv":
+    elif query.data == "hdcam":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Dᴇʟᴇᴛɪɴɢ...</b>")
         files, next_offset, total = await get_bad_files(
-                                                  '1tamilmv',
+                                                  'HDCam',
                                                   offset=0)
         deleted = 0
         for file in files:
@@ -1347,15 +1347,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '_id': file_ids,
             })
             if result.deleted_count:
-                logger.info('1tamilmv File Found ! Successfully deleted from database.')
+                logger.info('HDCams File Found ! Successfully deleted from database.')
             deleted+=1
         deleted = str(deleted)
-        await k.edit_text(text=f"<b>Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ {deleted} 1tamilmv Fɪʟᴇs.</b>")
+        await k.edit_text(text=f"<b>Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ {deleted} HDCᴀᴍ Fɪʟᴇs.</b>")
 
-    elif query.data == "tamilblasters":
+    elif query.data == "hdcams":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Dᴇʟᴇᴛɪɴɢ...</b>")
         files, next_offset, total = await get_bad_files(
-                                                  'tamilblasters',
+                                                  'HD-Cam',
                                                   offset=0)
         deleted = 0
         for file in files:
@@ -1364,10 +1364,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '_id': file_ids,
             })
             if result.deleted_count:
-                logger.info('tamilblasters File Found ! Successfully deleted from database.')
+                logger.info('HD-Cams File Found ! Successfully deleted from database.')
             deleted+=1
         deleted = str(deleted)
-        await k.edit_text(text=f"<b>Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ {deleted} tamilblasters Fɪʟᴇs.</b>")
+        await k.edit_text(text=f"<b>Sᴜᴄᴄᴇssғᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ {deleted} HD-Cᴀᴍ Fɪʟᴇs.</b>")
 
     elif query.data == "sprint":
         k = await client.send_message(chat_id=query.message.chat.id, text="<b>Dᴇʟᴇᴛɪɴɢ...</b>")
