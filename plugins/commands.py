@@ -577,17 +577,14 @@ async def deletemultiplefiles(bot, message):
             InlineKeyboardButton("PʀᴇDVD", callback_data="predvd"),
             InlineKeyboardButton("PʀᴇDVD Rɪᴘ", callback_data="predvdrip")
           ],[
-            InlineKeyboardButton("HDᴛs", callback_data="hdts"),
-            InlineKeyboardButton("HD-ᴛs", callback_data="hdtss")
+            InlineKeyboardButton("1Tamilmv", callback_data="1tamilmv"),
+            InlineKeyboardButton("Tamilblasters", callback_data="tamilblasters")
           ],[
             InlineKeyboardButton("HDCᴀᴍ", callback_data="hdcam"),
             InlineKeyboardButton("HD-Cᴀᴍ", callback_data="hdcams")
           ],[
             InlineKeyboardButton("CᴀᴍRɪᴘ", callback_data="camrip"),
             InlineKeyboardButton("S-Pʀɪɴᴛ", callback_data="sprint")
-          ],[
-            InlineKeyboardButton("1Tamilmv", callback_data="1tamilmv"),
-            InlineKeyboardButton("Tamilblasters", callback_data="tamilblasters")
           ],[
             InlineKeyboardButton("Cᴀɴᴄᴇʟ", callback_data="close_data")
           ]]
